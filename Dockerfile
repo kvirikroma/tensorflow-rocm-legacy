@@ -7,9 +7,9 @@ ENV VIRTUAL_ENV=$VIRTUAL_ENV
 
 RUN apt-get update; apt-get install -y sudo python3.8 python3.8-dev python3.8-venv graphviz
 
-RUN python3.6 -m pip uninstall -y tensorflow
+# RUN python3.6 -m pip uninstall -y tensorflow
 
-RUN rm -rf /root/*
+# RUN rm -rf /root/*
 
 RUN useradd -ms /bin/bash $USERNAME
 
