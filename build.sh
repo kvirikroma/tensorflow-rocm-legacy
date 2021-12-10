@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo docker build -t tf-rocm-legacy
+sudo docker build --build-arg USERNAME=$USER -t tf-rocm-legacy .
